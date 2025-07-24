@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .block {
+            display: block;
+            background-color: aqua;
+        }
+
+        .inline {
+            display: inline;
+            background-color: aquamarine;
+        }
+
+        .block2 {
+            display: block;
+            background-color: blanchedalmond;
+            width: 400px;
+            height: 100px;
+            text-align: center;
+        }
+
+        .inline-block {
+            display: inline-block;
+        }
+
+        .background {
+            border: 2px solid red;
+            margin-top: 24px;
+            width: 600px;
+            height: 400px;
+            background-image: url("imgs/cake.jpg");
+            /* background-repeat: no-repeat; */
+            background-size: 100% auto;
+        }
+
+        .bread {
+            border: 2px solid green;
+            margin-top: 24px;
+            width: 45%;
+            height: 600px;
+            background-image: url(imgs/bread.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% auto;
+
+        }
+
+        .bread2 {
+            border: 2px solid green;
+            margin-top: 24px;
+            width: 45%;
+            height: 600px;
+            background: url(imgs/bread.jpg) no-repeat center center;
+            /* background-repeat: no-repeat; */
+            /* background-position: center center; */
+            background-size: 50% auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="" class="block">Google</a>
+    <a href="" class="block2">YouTube</a>
+    <a href="" class="inline-block">Gmail</a>
+    <div class="inline">I'm inline div</div>
+    <div class="background"></div>
+    <div class="bread"></div>
+    <div class="bread2"></div>
+
+</body>
+
+</html>

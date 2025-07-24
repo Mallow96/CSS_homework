@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD主導覽練習檔</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Mukta:wght@300&display=swap');
+
+        /* font-family: 'Mukta', sans-serif; 
+            font-family: 'Dosis';
+        */
+        /* 電腦與平板上應用的樣式 */
+        body {
+            background-color: rgb(237, 237, 237);
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        /* menu starts*/
+        .menu {
+            background-color: darkgray;
+            width: 3rem;
+            height: 3rem;
+            border: 0.4rem pink solid;
+            position: relative;
+            border-radius: 1rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        .menu::after {
+            content: "";
+            width: 2rem;
+            height: 0.3rem;
+            border-top: 0.9rem double lightcyan;
+            border-bottom: 0.3rem solid lightcyan;
+            position: absolute;
+            top: calc((100% - 1.5rem) / 2);
+            left: calc((100% - 2rem) / 2);
+        }
+
+        /* menu ends */
+
+        .header {
+            width: 100%;
+            background-color: cornflowerblue;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 100px;
+            text-align: center;
+            padding: 12px;
+            background-color: burlywood;
+            font-family: 'Mukta', sans-serif;
+            font-size: 24px;
+        }
+
+        .navbar {
+            width: 50%;
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        .menu-items {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            font-family: 'Mukta', sans-serif;
+            height: 100%;
+            width: 100%;
+        }
+
+        .menu-items li {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            /* background-color: aqua; */
+            justify-content: space-evenly;
+        }
+
+        .menu-items li a {
+            /* background-color: lightsalmon; */
+            padding: 12px;
+            text-decoration: none;
+            color: darkslategray;
+            font-size: 16px;
+            display: block;
+            border-radius: 10px;
+            width: 100%;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .menu-items li a:hover {
+            background-color: lightsalmon;
+            color: red;
+            font-weight: 600;
+        }
+
+        /* 手機 */
+        @media screen and (max-width: 500px) {
+            .menu {
+                display: block;
+            }
+
+            .header {
+                flex-direction: row;
+                flex-wrap: wrap;
+
+            }
+
+            .navbar {
+                width: 100%;
+                display: flex;
+                /* flex-direction: column; */
+            }
+
+            .menu-items {
+                display: flex;
+                flex-direction: column;
+                background-color: aquamarine;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="">MALLOW</a>
+        </div>
+
+        <div class="menu"></div>
+
+        <nav class="navbar">
+            <ol class="menu-items">
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">EXPERIENCE</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ol>
+        </nav>
+    </header>
+</body>
+
+</html>

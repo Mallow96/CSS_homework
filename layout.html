@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 50%;
+            height: 800px;
+            max-width: 1200px;
+            background-color: lightcoral;
+            padding: 0px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-end;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            align-content: stretch;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 150px;
+            /* margin: 10px; */
+        }
+
+        /* 
+        .box:nth-child(1) {
+            background-color: aquamarine;
+            width: 400px;
+            height: 300px;
+        } */
+
+        .box:nth-child(2n+1) {
+            background-color: azure;
+        }
+
+        .box:nth-child(2n) {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
