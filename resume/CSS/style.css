@@ -36,13 +36,15 @@ header>a {
 
 nav {
     /* background-color: aqua; */
-    width: 50%;
+    /* width: 50%; */
     font-size: 1rem;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .nav-list {
+    /* width: 100%; */
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -50,7 +52,7 @@ nav {
 }
 
 .nav-list>li>a {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     text-align: center;
     padding: 12px 24px;
@@ -94,15 +96,15 @@ h1 {
 
 .profile {
     width: 100%;
-    background-color: aquamarine;
     display: flex;
     justify-content: space-evenly;
 }
 
 .left-photo {
     width: 45%;
-    height: 400px;
+    height: 650px;
     overflow: hidden;
+    box-shadow: -16px 16px violet;
 }
 
 .left-photo>img {
@@ -124,6 +126,7 @@ h2 {
     margin-top: 24px;
 }
 
+/* -----------------------------------EDUCATION-------------------------*/
 .education {
     margin-top: 24px;
 }
@@ -156,6 +159,7 @@ h4 {
     font-size: 1.25rem;
 }
 
+/* -----------------------------EXPERIENCE--------------------- */
 #experience {
     background-color: rgb(235, 234, 234);
 }
@@ -187,4 +191,220 @@ h4 {
     width: 72px;
     border-radius: 50%;
     margin-right: 24px;
+}
+
+/* -------------------SKILLS---------------------------------------- */
+
+
+
+.skill-list>li {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 36px;
+}
+
+.skill-list>li>p {
+    width: 20%;
+}
+
+.bars {
+    width: 60%;
+    height: 24px;
+    border-radius: 20px;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 2px 2px 2px inset rgb(150, 150, 150);
+}
+
+.percent {
+    height: 24px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+}
+
+.per1 {
+    width: 90%;
+    background: linear-gradient(to right, orange, red);
+}
+
+.per2 {
+    width: 80%;
+    background: linear-gradient(to right, violet, blueviolet);
+}
+
+.per3 {
+    width: 70%;
+    background: linear-gradient(to right, gold, lightsalmon);
+}
+
+.per4 {
+    width: 60%;
+    background: linear-gradient(to right, limegreen, chartreuse);
+}
+
+.per5 {
+    width: 65%;
+    background: linear-gradient(to right, darkblue, skyblue);
+}
+
+/* --------------------------------PORTFOLIO-------------------------- */
+
+.portfolio>h2 {
+    text-align: center;
+}
+
+.portfolio {
+    height: 800px;
+}
+
+.image-area {
+    width: 100%;
+    height: 80%;
+}
+
+.portfo-list {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card,
+.column1 {
+    width: 19.5%;
+    height: 100%;
+}
+
+.card-2-wide {
+    width: 39%;
+}
+
+.row1 {
+    height: 33%;
+    margin-bottom: 10px;
+}
+
+.row2 {
+    height: 66%;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.column2 {
+    width: 40%;
+    height: 100%;
+}
+
+.column3 {
+    width: 39%;
+    height: 100%;
+}
+
+.column3-1 {
+    width: 100%;
+    height: 50%;
+}
+
+.column3-2 {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column1>.card,
+.column2>.card,
+.column3-1>.card {
+    width: 100%;
+}
+
+.column3-2>.card {
+    width: 49%;
+}
+
+.column1>.card:nth-child(1),
+.column3-1 {
+    padding-bottom: 10px;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-content {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+/* ------------------------CARD IMAGES----------------------------------------- */
+.card1 {
+    background: url(../img/autum.jpeg);
+}
+
+.card2 {
+    background: url(../img/beach.jpeg);
+}
+
+.card3 {
+    background: url(../img/hiker.jpeg);
+}
+
+.card4 {
+    background: url(../img/conference.jpeg);
+}
+
+.card5 {
+    background: url(../img/dogsurf.jpeg);
+}
+
+.card6 {
+    background: url(../img/fishing.jpeg);
+}
+
+.card7 {
+    background: url(../img/fljord.jpeg);
+}
+
+.card8 {
+    background: url(../img/health.jpeg);
+}
+
+.card9 {
+    background: url(../img/sheep.jpeg);
+    background-position: right;
+}
+
+.card10 {
+    background: url(../img/ski.jpeg);
+}
+
+/* ----------------------------CARD IMAGES--------------------------- */
+.card-front {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-back {
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
 }
