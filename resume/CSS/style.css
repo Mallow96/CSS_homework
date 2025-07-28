@@ -749,6 +749,10 @@ footer>p {
         width: 100%;
     }
 
+    .skill-list>li {
+        justify-content: space-between;
+    }
+
     .exp-list>li {
         flex-wrap: wrap;
     }
