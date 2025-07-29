@@ -411,8 +411,9 @@ h4 {
 }
 
 .image-area {
-    width: 100%;
+    width: 90%;
     height: 80%;
+    margin: 0 auto;
 }
 
 .row1 {
@@ -432,7 +433,7 @@ h4 {
 }
 
 .column1 {
-    width: 19%;
+    width: 18%;
     height: 33.5%;
     display: flex;
     flex-wrap: wrap;
@@ -446,11 +447,12 @@ h4 {
 
 .column2,
 .column3 {
-    width: 39.5%;
+    width: 39%;
     height: 69%;
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    justify-content: space-evenly;
 }
 
 .column2>.card {
@@ -459,7 +461,7 @@ h4 {
 }
 
 .column3>.card {
-    width: 48%;
+    width: 46%;
     height: 49%;
 }
 
@@ -768,6 +770,9 @@ footer>p {
 
     .image-area {
         align-content: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 100%;
     }
 
     .card {
@@ -779,30 +784,43 @@ footer>p {
     }
 
     .row1 {
-        width: 100%;
-        height: 36%;
+        width: 48%;
+        height: 80%;
+        flex-direction: column;
         flex-wrap: wrap;
         gap: 12px;
+        order: -1;
     }
 
     .row1>.card {
-        width: 48%;
-        height: 48%;
+        width: 100%;
+        height: 24%;
     }
 
     .column1 {
-        width: 100%;
-        height: 18%;
+        width: 48%;
+        height: 38%;
+        order: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 
     .column1>.card {
-        width: 48%;
+        width: 100%;
+        height: 100%;
     }
 
-    .column2,
     .column3 {
-        width: 100%;
+        width: 48%;
+        height: 59.5%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .column2 {
+        width: 48%;
         height: 18%;
+        order: -2;
     }
 
     .column2>.card {
@@ -811,7 +829,7 @@ footer>p {
     }
 
     .column3>.card {
-        width: 48%;
+        width: 100%;
         height: 100%;
     }
 
@@ -822,6 +840,7 @@ footer>p {
 
     .contact {
         flex-wrap: wrap;
+        margin-top: 108px;
     }
 
     .con-left {
